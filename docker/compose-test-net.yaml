@@ -43,9 +43,9 @@ services:
         - /home/bswamina/hlf_v2/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/tls/:/var/hyperledger/orderer/tls
         - orderer.example.com:/var/hyperledger/production/orderer
     ports:
-      - "192.168.1.45:7050:7050"
-      - "192.168.1.45:7053:7053"
-      - "192.168.1.45:9443:9443"
+      - "192.168.1.XX:7050:7050"
+      - "192.168.1.XX:7053:7053"
+      - "192.168.1.XX:9443:9443"
 
   peer0.org1.example.com:
     container_name: peer0.org1.example.com
@@ -80,8 +80,8 @@ services:
     working_dir: /root
     command: peer node start
     ports:
-      - "192.168.1.45:7051:7051"
-      - "192.168.1.45:9444:9444"
+      - "192.168.1.XX:7051:7051"
+      - "192.168.1.XX:9444:9444"
 
   peer0.org2.example.com:
     container_name: peer0.org2.example.com
@@ -116,6 +116,6 @@ services:
     working_dir: /root
     command: peer node start
     ports:
-      - "192.168.1.45:9051:9051"
-      - "192.168.1.45:9445:9445"
+      - "192.168.1.XX:9051:9051"
+      - "192.168.1.XX:9445:9445"
 

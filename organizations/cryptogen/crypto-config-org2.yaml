@@ -10,7 +10,7 @@ PeerOrgs:
     Template:
       Count: 1
       SANS:
-        - "192.168.1.45"
+        - "192.168.1.XX"
       # Start: 5
       # Hostname: {{.Prefix}}{{.Index}} # default
 
